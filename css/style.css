@@ -33,10 +33,11 @@ html, body {
 .row-land{
     width: auto;
     height: auto;
+    display: flex;
 
 }
 .row-land .item-land{
-  display: inline-block;
+/*  display: inline-block;*/
   position: relative;
 }
 /*.item-land .icon-land{
@@ -48,7 +49,10 @@ html, body {
     -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 }*/
-.item-land .icon-land {
+.section-width{
+    width: 50000px;
+}
+/*.item-land .icon-land {
     cursor: pointer;
     margin: 5px;
     border-radius: 2px;
@@ -58,6 +62,15 @@ html, body {
     -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}*/
+.item-land .icon-land {
+    cursor: pointer;
+    margin: 3px 0px;
+}
+.item-land-special{
+/*    margin-left: -2px;
+    margin-right: -2px;*/
+    margin:3px 0px;
 }
 .item-land .icon-land i {
     color: #fff;
@@ -119,7 +132,241 @@ html, body {
     background: #e76f51;
 }
 .icon-land.bg-yellow{
-    background: yellow;
+    background: #ffbc00bd;
+}
+.bg-blue{
+    background: #47cdd1 !important;
+}
+.bg-blue2{
+    background: #168084c4 !important
+}
+.bg-green{
+    background: green;
+}
+.bg-orange{
+    background: orange;
+}
+.cirle-item-land {
+    position: absolute;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cirle-item-land2 {
+    position: absolute;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cirle-item-land2 .circle-size,
+.cirle-item-land2 .circle-id {
+    font-size: 2px!important;
+}
+.circle-size,
+.circle-id {
+    font-size: 4px;
+    font-weight: 100;
+}
+.circle-id:after {
+    content: '';
+    background-color: #000;
+    width: 10px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+}
+.cirle-item-land2 .circle-id:after {
+    content: '';
+    background-color: #000;
+    width: 5px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+}
+.image-open-land img {
+    height: 1000px;
+}
+.images-noi-hoa-tang-bottom img,
+.images-noi-hoa-tang img {
+    margin: 0px auto;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-special-circle-large {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    margin: 5px auto;
+    border: solid 1px tomato;
+}
+/*
+.list-land-circle .item-land:first-child {
+    position: absolute;
+    top: 105px;
+    transform: rotate(18deg);
+}
+.list-land-circle .item-land:nth-child(2) {
+    position: absolute;
+    top: 55px;
+    left: 21px;
+    transform: rotate(28deg);
+}
+.list-land-circle .item-land:nth-child(3) {
+    position: absolute;
+    top: 18px;
+    left: 52px;
+    transform: rotate(52deg);
+}
+.list-land-circle .item-land:nth-child(4) {
+    position: absolute;
+    top: -2px;
+    left: 96px;
+    transform: rotate(70deg);
+}
+.list-land-circle .item-land:nth-child(5) {
+    position: absolute;
+    top: -6px;
+    left: 96px;
+    transform: rotate(70deg);
+}
+.list-land-circle .item-land:nth-child(5) {
+    position: absolute;
+    top: -18px;
+    left: 150px;
+    transform: rotate(78deg);
+}
+.list-land-circle .item-land:nth-child(6) {
+    position: absolute;
+    top: -18px;
+    right: 150px;
+    transform: rotate(-78deg);
+}
+.list-land-circle .item-land:nth-child(7) {
+    position: absolute;
+    top: -6px;
+    right: 96px;
+    transform: rotate(-70deg);
+}*/
+.list-land-circle .item-land:first-child {
+    position: absolute;
+    top: 101px;
+    left: -8px;
+    transform: rotate(18deg);
+}
+.list-land-circle .item-land:nth-child(2) {
+    position: absolute;
+    top: 51px;
+    left: 16px;
+    transform: rotate(33deg);
+}
+.list-land-circle .item-land:nth-child(3) {
+    position: absolute;
+    top: 10px;
+    left: 52px;
+    transform: rotate(52deg);
+}
+.list-land-circle .item-land:nth-child(4) {
+    position: absolute;
+    top: -13px;
+    left: 99px;
+    transform: rotate(74deg);
+}
+.list-land-circle .item-land:nth-child(5) {
+    position: absolute;
+    top: -22px;
+    left: 153px;
+    transform: rotate(85deg);
+}
+.list-land-circle .item-land:nth-child(6) {
+    position: absolute;
+    top: -22px;
+    right: 153px;
+    transform: rotate(-85deg);
+}
+.list-land-circle .item-land:nth-child(7) {
+    position: absolute;
+    top: -13px;
+    right: 99px;
+    transform: rotate(-74deg);
+}
+.list-land-circle .item-land:nth-child(8) {
+    position: absolute;
+    top: 10px;
+    right: 52px;
+    transform: rotate(-52deg);
+}
+.list-land-circle .item-land:nth-child(9) {
+    position: absolute;
+    top: 51px;
+    right: 16px;
+    transform: rotate(-33deg);
+}
+.list-land-circle .item-land:nth-child(10) {
+    position: absolute;
+    top: 101px;
+    right: -8px;
+    transform: rotate(-18deg);
+}
+.list-land-circle .item-land:nth-child(11) {
+    position: absolute;
+    top: 111px;
+    left: 72px;
+    transform: rotate(33deg);
+}
+.list-land-circle .item-land:nth-child(12) {
+    position: absolute;
+    top: 73px;
+    left: 107px;
+    transform: rotate(52deg);
+}
+.list-land-circle .item-land:nth-child(13) {
+    position: absolute;
+    top: 55px;
+    left: 152px;
+    transform: rotate(86deg);
+}
+.list-land-circle .item-land:nth-child(14) {
+    position: absolute;
+    top: 55px;
+    right: 152px;
+    transform: rotate(-86deg);
+}
+.list-land-circle .item-land:nth-child(15) {
+    position: absolute;
+    top: 73px;
+    right: 107px;
+    transform: rotate(-52deg);
+}
+.list-land-circle .item-land:nth-child(16) {
+    position: absolute;
+    top: 111px;
+    right: 72px;
+    transform: rotate(-33deg);
 }
 @media (min-width: 576px)
 {

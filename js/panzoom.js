@@ -336,7 +336,7 @@
         setTransform: setTransform,
         startX: 0,
         startY: 0,
-        startScale: 0.9,
+        startScale: 0.3,
         step: 0.3,
         touchAction: 'none'
     };

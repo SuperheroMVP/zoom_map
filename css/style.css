@@ -73,7 +73,7 @@ html, body {
 }*/
 .item-land .icon-land {
     cursor: pointer;
-    margin: 3px 0px;
+/*    margin: 3px 0px;*/
 }
 .item-land-special{
 /*    margin-left: -2px;
@@ -134,7 +134,13 @@ html, body {
 .modal-hover:hover > .content-modal-hover{display: none;}
 .icon-land.bg-green {
    /* background: #1d7101;*/
-   background: #6a994e;
+   background: #7baa1d;
+}
+.icon-land.bg-purple {
+   background: #c24de0;
+}
+.icon-land.bg-orange {
+   background: #e97b3f;
 }
 .icon-land.bg-red {
     background: #e76f51;

@@ -186,9 +186,29 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.cirle-item-land-large {
+    position: absolute;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .cirle-item-land2 .circle-size,
 .cirle-item-land2 .circle-id {
     font-size: 2px!important;
+}
+.cirle-item-land-large .circle-size,
+.cirle-item-land-large .circle-id {
+    font-size: 8px!important;
 }
 .circle-size,
 .circle-id {
@@ -207,6 +227,14 @@ html, body {
     content: '';
     background-color: #000;
     width: 5px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+}
+.cirle-item-land-large .circle-id:after {
+    content: '';
+    background-color: #000;
+    width: 15px;
     height: 1px;
     display: block;
     margin: 0 auto;

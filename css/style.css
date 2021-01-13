@@ -75,11 +75,9 @@ html, body {
     cursor: pointer;
 /*    margin: 3px 0px;*/
 }
-.item-land-special{
-/*    margin-left: -2px;
-    margin-right: -2px;*/
+/*.item-land-special{
     margin:3px 0px;
-}
+}*/
 .item-land .icon-land i {
     color: #fff;
     width: 100%;

@@ -14,16 +14,24 @@ html, body {
     margin: 10px 0px;
     width: 5000px;
 }
-.content-land {
+/*.content-land {
     display: inline-block;
-   /* border: 2px solid #9fd84a;*/
-   /*border: 2px solid #1d7101;*/
    border:1px solid #283618;
     padding: 5px 10px;
     border-radius: 15px;
     vertical-align: top;
     background: #fff;
     position: relative;
+}*/
+.content-land {
+    display: inline-block;
+    border: 1px solid #283618;
+    padding: 23px;
+    border-radius: 30px;
+    vertical-align: top;
+    background: #fff;
+    position: relative;
+    margin: 30px 25px;
 }
 .land{
     width: auto;
@@ -223,6 +231,11 @@ html, body {
     list-style: none;
     margin: 5px auto;
 /*    border: solid 1px tomato;*/
+}
+.row-land-d-block {
+    width: auto;
+    height: auto;
+    display: block;
 }
 /*
 .list-land-circle .item-land:first-child {

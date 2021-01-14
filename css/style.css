@@ -146,11 +146,20 @@ html, body {
 .icon-land.bg-yellow{
     background: #ffbc00bd;
 }
+.icon-land.bg-brown{
+    background: #8a7a4c;
+}
 .bg-blue{
     background: #47cdd1 !important;
 }
 .bg-blue2{
-    background: #168084c4 !important
+    background: #168084c4 !important;
+}
+.bg-blue3{
+    background: #212830 !important;
+}
+.bg-blue4{
+    background: #395cf3 !important;
 }
 .bg-green{
     background: green;
@@ -243,8 +252,13 @@ html, body {
     display: block;
     margin: 0 auto;
 }
-.image-open-land img {
+/*.image-open-land img {
     height: 1000px;
+}*/
+.image-open-land img {
+    height: 3400px;
+    vertical-align: bottom!important;
+    margin-top: 1350px;
 }
 .images-noi-hoa-tang-bottom img,
 .images-noi-hoa-tang img {

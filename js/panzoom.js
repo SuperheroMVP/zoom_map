@@ -334,9 +334,9 @@
         panOnlyWhenZoomed: false,
         relative: false,
         setTransform: setTransform,
-        startX: 0,
-        startY: 0,
-        startScale: 0.3,
+        startX: -3500,
+        startY: -9400,
+        startScale: 0.2,
         step: 0.3,
         touchAction: 'none'
     };

@@ -25,16 +25,12 @@
 </head>
 <body>
 
-  <div class="jquery-script-clear"></div>
-</div>
-</div>
+
+
 <section>
-<!--   <h1>Panning and Zooming Example</h1>
-  <p>A simple JavaScript plugin that allows you to drag, pan, zoom in/out any elements of your webpage using CSS3.</p> -->
   <div id="parent">
     <div class="parent">
       <div class="panzoom" id="panzoom-element">
-
         <div class="content-main">
           <div class="open-land" style="display: -webkit-box!important;">
             <div class="image-open-land">
@@ -28807,21 +28803,14 @@
               </div>                                              
             </div>                           
           </div>
-        </div> 
-          
+        </div>           
       </div>
-
     </div> 
-
   </div>    
 </div>
 
-<!--   <div class="buttons">
-    <button id="zoom-in">Zoom In</button>
-    <button id="zoom-out">Zoom Out</button>
-    <button id="reset">Reset</button>
-  </div> -->
-  <div id="myModal" class="modal" tabindex="-1" role="dialog">
+
+  <div id="myModal" style="padding-right: 0px!important" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
        <div class="row">
@@ -28879,6 +28868,22 @@
                 <option>Chưa đặt</option>
               </select>
             </div>
+            <div class="form-group">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="myCheck1" onclick="myFunction1()" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Hỏa táng tại đây</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="myCheck2" onclick="myFunction2()" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Hỏa táng nơi khác</label>
+              </div>
+            </div>
+            <div id="text" style="display:none">
+              <div class="form-group">
+                <label for="phone">Nhập ngày nhận về</label>
+                <input type="date" class="form-control" name="received_date" id="received_date" placeholder="Nhập số điện thoại">
+              </div>
+            </div>
 
             <button type="button" class="close close-style1" data-dismiss="modal" aria-label="Close">
              <span aria-hidden="true">&times;</span>
@@ -28886,7 +28891,6 @@
          </div>
          <div class="modal-footer">
           <button type="submit" class="btn-style1">Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-
         </div>
       </form>
     </div>
@@ -28898,6 +28902,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+  function myFunction1() {
+    var checkBox1 = document.getElementById("myCheck1");
+
+    var text = document.getElementById("text");
+    if (checkBox1.checked == true){
+      text.style.display = "none";
+    } else {
+       text.style.display = "true";
+    }
+  }
+  function myFunction2() {
+    var checkBox2 = document.getElementById("myCheck2");
+
+    var text = document.getElementById("text");
+    if (checkBox2.checked == true){
+      text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+  }
   $( document ).ready(function() {
         // $('.model_click').on( "click", function() {
         //     $('#myModal').modal();

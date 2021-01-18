@@ -25,8 +25,6 @@
 </head>
 <body>
 
-
-
 <section>
   <div id="parent">
     <div class="parent">
@@ -28807,101 +28805,163 @@
       </div>
     </div> 
   </div>    
-</div>
-
 
   <div id="myModal" style="padding-right: 0px!important" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog1" role="document">
       <div class="modal-content">
-       <div class="row">
-        <div class="col-md-4">
-          <div class="avatar-img">
-            <img class="img-fluid" src="images/avatar.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-8 align-self-center">
-          <div class="content-left">
-            <div class="title-heading">Nguyễn Văn A</div>
-            <button type="button" class="close close-style1" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
-           <div class="content-bottom">
-            <p>Loaị ô đất: <strong> Ô đất</strong></p>
-            <p>Tình trạng: <strong> Đang Trống</strong></p>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a class="btn btn-style1" data-toggle="modal" data-target="#myModal2" >Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-          <button type="submit" class="btn-style1">Chỉ đường <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-
+         <div class="row">
+            <div class="col-md-4">
+              <div class="avatar-img">
+                <img class="img-fluid" src="images/avatar.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-8 align-self-center">
+              <div class="content-left">
+                <div class="title-heading">Nguyễn Văn A</div>
+                <button type="button" class="close close-style1" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="content-bottom">
+                  <p>Loaị ô đất: <strong> Ô đất</strong></p>
+                  <p>Tình trạng: <strong> Đang Trống</strong></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-style1" data-toggle="modal" data-target="#myModal2" >Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <button type="submit" class="btn-style1">Chỉ đường <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-<div id="myModal2" class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content modal-content">
-     <div class="row">
-      <div class="col-md-4">
-        <div class="avatar-img">
-          <img class="img-fluid" src="images/avatar.jpg" alt="">
+
+  <div id="myModal2" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog2" role="document">
+      <div class="modal-content modal-content">
+        <div class="button-close-myModal2">
+            <button type="button" class="close close-style2" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+            </button>
         </div>
-      </div>
-      <div class="col-md-8 align-self-center">
-        <div class="content-left">
-          <form action="" method="">
-            <div class="form-group">
-              <label for="name">Họ và tên</label>
-              <input type="text" class="form-control"  placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <label for="phone">Số Điện Thoại</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nhập số điện thoại">
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Tình trạng ô</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Đang đặt</option>
-                <option>Đã đặt</option>
-                <option>Chưa đặt</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="myCheck1" onclick="myFunction1()" value="option1">
-                <label class="form-check-label" for="inlineRadio1">Hỏa táng tại đây</label>
+        <form action="" method="">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="avatar-img text-center mb-3">
+                <img class="img-fluid" src="images/avatar.jpg" style="width: 120px; height: 100px;" alt="">
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="myCheck2" onclick="myFunction2()" value="option2">
-                <label class="form-check-label" for="inlineRadio2">Hỏa táng nơi khác</label>
+              <div class="form-group row">
+                  <label for="name" class="col-sm-3 col-form-label">Họ và tên</label>
+                  <div class="col-sm-9">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Họ và tên">
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label for="name" class="col-sm-3 col-form-label">Giới tính</label>
+                <div class="col-sm-9">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="1" checked="">
+                        <label class="form-check-label" for="male">Nam</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="0">
+                        <label class="form-check-label" for="female">Nữ</label>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                  <label for="dob" class="col-sm-3 col-form-label">Ngày sinh</label>
+                  <div class="col-sm-9">
+                    <input type="date" name="dob" id="dob" class="form-control" placeholder="Ngày sinh" value="1920-01-01">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="dod" class="col-sm-3 col-form-label">Ngày mất</label>
+                  <div class="col-sm-9">
+                    <input type="date" name="dod" id="dod" class="form-control" placeholder="Ngày mất" value="1990-01-01">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="phone" class="col-sm-3 col-form-label">Số Điện Thoại</label>
+                  <div class="col-sm-9">
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Số Điện Thoại">
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="service" class="col-sm-3 col-form-label">Dịch vụ</label>
+                <div class="col-sm-9">
+                  <select class="form-control" id="service" name="service">
+                      <option value="" selected="">Không có dịch vụ</option>
+                      <option value="Tất cả">Tất cả</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="status" class="col-sm-3 col-form-label">Trạng thái</label>
+                <div class="col-sm-9">
+                  <select name="status" id="status" class="form-control">
+                      <option value="0">Trống</option>
+                      <option value="1">Đã sử dụng</option>
+                      <option value="2">Đã có người đặt</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div id="text" style="display:none">
+            <div class="col-md-6 col-sm-12 col-12">
               <div class="form-group">
-                <label for="phone">Nhập ngày nhận về</label>
-                <input type="date" class="form-control" name="received_date" id="received_date" placeholder="Nhập số điện thoại">
+                <label for="start_service_date">Ngày bắt đầu dịch vụ</label>
+                  <input type="date" name="start_service_date" id="start_service_date" class="form-control" placeholder="Ngày bắt đầu dịch vụ" value="2121-01-18">
               </div>
-            </div>
-
-            <button type="button" class="close close-style1" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
-         </div>
-         <div class="modal-footer">
-          <button type="submit" class="btn-style1">Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-        </div>
-      </form>
+              <div class="form-group">
+                <label for="end_service_date">Ngày kết thúc dịch vụ</label>
+                  <input type="date" name="end_service_date" id="end_service_date" class="form-control" placeholder="Ngày kết thúc dịch vụ" value="2121-01-18">
+              </div>
+              <div class="form-group">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="is_cremation" id="is_cremation" value="1" checked="">
+                      <label class="form-check-label" for="is_cremation">Hoả táng tại đây</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="is_cremation" id="is_not_cremation" value="0">
+                      <label class="form-check-label" for="cremation">Chuyển từ nơi khác về</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="date_cremation">Ngày hoả táng/Chuyển về</label>
+                  <input type="date" name="date_cremation" id="date_cremation" class="form-control" placeholder="Ngày hoả táng/Chuyển về" value="2121-01-18">
+              </div>
+              <div class="form-group">
+                  <label for="place_cremation">Nơi hoả táng/Chuyển về</label>
+                  <input type="text" name="place_cremation" id="place_cremation" class="form-control" placeholder="Nơi hoả táng/Chuyển về">
+              </div>
+              <div class="form-group">
+                  <label for="comment">Ghi chú</label>
+                  <textarea name="comment" id="comment" cols="30" rows="4" class="form-control border"></textarea>
+              </div>
+            </div>         
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-style-close" name="btn-submit" data-dismiss="modal" aria-label="Close">Close <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <button type="submit" class="btn-style1" name="btn-submit">Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
-</div>
-</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+
   function myFunction1() {
     var checkBox1 = document.getElementById("myCheck1");
 
@@ -28922,10 +28982,12 @@
        text.style.display = "none";
     }
   }
+
   $( document ).ready(function() {
         // $('.model_click').on( "click", function() {
         //     $('#myModal').modal();
-        // });
+        // });zoom_element
+
         $( ".model_click" ).dblclick(function() {
           $('#myModal').modal();
         });

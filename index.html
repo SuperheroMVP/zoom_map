@@ -28827,7 +28827,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <a class="btn btn-style1" data-toggle="modal" data-target="#myModal2" >Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a class="btn btn-style2" data-toggle="modal" data-target="#myModal2" >Sửa thông tin <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                 <button type="submit" class="btn-style1">Chỉ đường <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
@@ -28956,6 +28956,59 @@
       </div>
     </div>
   </div>
+  <div>
+    <form action="">
+      <div class="wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" id="key_up" placeholder="Bạn đang tìm kiếm?">
+            <div class="searchButton2">
+              <i class="fa fa-search" aria-hidden="true"></i>
+           </div>
+          </div>
+          <div class="result-search">
+            <ul>
+              <li>
+                <a href="#" id="zoom-element">
+                  <div class="title-heading-result">
+                    <span class="first-icon">#</span>
+                    <span>Blade Templates</span>
+                  </div>
+                  <div class="title-footer-result">
+                    <span class="second-icon">&gt;</span>
+                    <span>Blade Templates</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="title-heading-result">
+                    <span class="first-icon">#</span>
+                    <span>Blade Templates</span>
+                  </div>
+                  <div class="title-footer-result">
+                    <span class="second-icon">&gt;</span>
+                    <span>Blade Templates</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="title-heading-result">
+                    <span class="first-icon">#</span>
+                    <span>Blade Templates</span>
+                  </div>
+                  <div class="title-footer-result">
+                    <span class="second-icon">&gt;</span>
+                    <span>Blade Templates</span>
+                  </div>
+                </a>
+              </li>       
+            </ul>           
+        </div>
+      </div>
+
+    </form>
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -28983,15 +29036,22 @@
     }
   }
 
-  $( document ).ready(function() {
-        // $('.model_click').on( "click", function() {
-        //     $('#myModal').modal();
-        // });zoom_element
+  $(document ).ready(function() {
+    $( ".model_click" ).dblclick(function() {
+      $('#myModal').modal();
+    });
 
-        $( ".model_click" ).dblclick(function() {
-          $('#myModal').modal();
-        });
-      });
+    $(document).on('keyup','#key_up',function(){
+      var query = $(this).val();
+      if(query=='')
+      {
+        $('.result-search').removeClass('block-result-search');
+      }
+      else{
+        $('.result-search').addClass('block-result-search');
+      }
+    });
+  });
     </script>
     <script>
       const elem = document.getElementById('panzoom-element');

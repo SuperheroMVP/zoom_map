@@ -17588,7 +17588,7 @@
                   <div class="row-land-child d-flex">
                     <div class="row-land-child1">
                       <div class="row-land wh-9_11">
-                        <div class="item-land model_click modal-hover">
+                        <div class="item-land model_click modal-hover" id="zoom-element">
                           <div class="content-modal-hover"></div>
                           <div class="icon-land bg-green" style="width: 90px;height: 110px;">
                             <div class="cirle-item-land">
@@ -28968,7 +28968,7 @@
           <div class="result-search">
             <ul>
               <li>
-                <a href="#" id="zoom-element">
+                <a href="#" onclick="myFunction3();" id="zoom-element">
                   <div class="title-heading-result">
                     <span class="first-icon">#</span>
                     <span>Blade Templates</span>
@@ -29035,7 +29035,13 @@
        text.style.display = "none";
     }
   }
-
+  function myFunction3(){
+    const elem = document.getElementById('zoom-element')
+    const panzoom = Panzoom(elem, {
+      getScale: 1000,
+      maxScale: 3
+    })
+  }
   $(document ).ready(function() {
     $( ".model_click" ).dblclick(function() {
       $('#myModal').modal();

@@ -112,6 +112,7 @@ html, body {
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
      display: none; 
+     z-index: 1000000;
 }
 .content-modal-hover:after {
     position: absolute;
@@ -176,6 +177,13 @@ html, body {
 }
 .bg-orange{
     background: orange;
+}
+.model_click {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+     z-index: 1000; 
 }
 .cirle-item-land {
     position: absolute;
@@ -805,4 +813,15 @@ span.close-right i {
     color: #F2594B!important;
     margin-left: 20px!important;
     font-size: 15px;
+}
+
+.line-bottom2{
+    margin: 5px 0px;
+    border-bottom: 1px solid #7baa1d;
+}
+.user-green{
+    color: #7baa1d;
+}
+.list-user p i:first-child{
+    font-size: 18px;
 }

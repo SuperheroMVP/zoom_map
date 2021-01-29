@@ -170,21 +170,25 @@
                             <div class="item-land model_click modal-hover">
                               <div class="item-land-special" style="width: 30px;height: 30px;"></div>
                             </div>
-                            <div class="item-land model_click modal-hover">
+                            <div class="item-land modal-hover" style="width: 30px;height: 30px;">                             
                               <div class="content-modal-hover"></div>
-                              <div class="icon-land bg-yellow" style="width: 30px;height: 30px;">
-                                <div class="cirle-item-land">
-                                  <div class="circle-id">ct-29</div>
-                                   <div class="circle-size">9</div>
+                              <div class="model_click">
+                                <div class="icon-land bg-yellow" style="width: 30px;height: 30px;">
+                                  <div class="cirle-item-land">
+                                    <div class="circle-id">ct-29</div>
+                                     <div class="circle-size">9</div>
+                                  </div>
                                 </div>
                               </div>
                             </div>                                                                                        
-                            <div class="item-land model_click modal-hover">
+                            <div class="item-land modal-hover" style="width: 30px;height: 30px;">                             
                               <div class="content-modal-hover"></div>
-                              <div class="icon-land bg-yellow" style="width: 30px;height: 30px;">
-                                <div class="cirle-item-land">
-                                  <div class="circle-id">ct-29</div>
-                                   <div class="circle-size">9</div>
+                              <div class="model_click">
+                                <div class="icon-land bg-yellow" style="width: 30px;height: 30px;">
+                                  <div class="cirle-item-land">
+                                    <div class="circle-id">ct-29</div>
+                                     <div class="circle-size">9</div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -44324,8 +44328,16 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="content-bottom">
-                  <p>Loaị ô đất: <strong> Ô đất</strong></p>
-                  <p>Tình trạng: <strong> Đang Trống</strong></p>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-6">
+                      <p>Loaị ô đất: <strong> Ô đất</strong></p>
+                      <p>Tình trạng: <strong> Đang Trống</strong></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-6 list-user">
+                      <p><i class="fa fa-user user-green" aria-hidden="true"></i> : <strong>Nguyễn Văn A</strong></p>
+                      <p><i class="fa fa-user user-green" aria-hidden="true"></i> : <strong>Nguyễn Văn B</strong></p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="modal-footer">
@@ -44549,6 +44561,7 @@
   $(document ).ready(function() {
     $('.modal-hover').mouseenter(function() {
         $(".content-modal-hover").html(`
+          <div class="content-hover-top">
             <div class="item-modal d-flex justify-content-between">
               <div class="content-hover-left">This is land:</div>
               <div class="content-hover-right">01</div>
@@ -44565,6 +44578,22 @@
               <div class="content-hover-left">This is email:</div>
               <div class="content-hover-right">yourmail@gmail.com</div>
             </div>
+          </div>
+          <div class="line-bottom2"></div>
+          <div class="content-hover-bottom">
+            <div class="item-modal d-flex justify-content-between">
+              <div class="content-hover-left"><i class="fa fa-user" aria-hidden="true"></i></div>
+              <div class="content-hover-right">Nguyen Van A</div>
+            </div>
+            <div class="item-modal d-flex justify-content-between">
+              <div class="content-hover-left"><i class="fa fa-user" aria-hidden="true"></i></div>
+              <div class="content-hover-right">Nguyen Van B</div>
+            </div>
+            <div class="item-modal d-flex justify-content-between">
+              <div class="content-hover-left"><i class="fa fa-user" aria-hidden="true"></i></div>
+              <div class="content-hover-right">Nguyen Van C</div>
+            </div>
+          </div>
         `);
   
     });
